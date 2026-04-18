@@ -67,7 +67,7 @@ function LoginForm() {
             value={email}
             onChange={(e: React.ChangeEvent<HTMLInputElement>) => setEmail(e.target.value)}
             error={errors.email}
-            placeholder="admin@hotelalwarroyal.com"
+            placeholder="Enter your email"
             required
           />
           <Input
@@ -84,9 +84,7 @@ function LoginForm() {
           </Button>
         </form>
 
-        <p className="text-xs text-neutral-400 text-center mt-4">
-          Default: admin@hotelalwarroyal.com / admin123
-        </p>
+
       </div>
     </div>
   );
