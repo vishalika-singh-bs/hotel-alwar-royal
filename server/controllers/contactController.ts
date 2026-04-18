@@ -1,5 +1,5 @@
 import type { Request, Response } from 'express';
-import prisma from '../config/prisma';
+import prisma from '../config/prisma.js';
 
 export async function sendContactMessage(req: Request, res: Response) {
   const { name, email, message } = req.body;

@@ -1,6 +1,6 @@
 import { Router } from 'express';
-import { login, logout } from '../controllers/authController';
-import { validate } from '../middleware/validate';
+import { login, logout } from '../controllers/authController.js';
+import { validate } from '../middleware/validate.js';
 import { z } from 'zod/v4';
 
 const loginSchema = z.object({
