@@ -1,10 +1,11 @@
 import type { Request, Response } from 'express';
 import bcrypt from 'bcrypt';
 import jwt from 'jsonwebtoken';
-import prisma from '../config/prisma';
+import type { StringValue } from 'ms';
+import prisma from '../config/prisma.js';
 
 const JWT_SECRET = process.env.JWT_SECRET || 'change-this-secret';
-const JWT_EXPIRES_IN = process.env.JWT_EXPIRES_IN || '8h';
+const JWT_EXPIRES_IN = (process.env.JWT_EXPIRES_IN || '8h') as StringValue;
 
 export async function login(req: Request, res: Response) {
   const { email, password } = req.body;

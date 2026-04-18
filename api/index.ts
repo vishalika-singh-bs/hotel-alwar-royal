@@ -3,11 +3,11 @@ import cors from 'cors';
 import helmet from 'helmet';
 import dotenv from 'dotenv';
 import { rateLimit } from 'express-rate-limit';
-import roomRoutes from '../server/routes/rooms';
-import bookingRoutes from '../server/routes/bookings';
-import contactRoutes from '../server/routes/contact';
-import authRoutes from '../server/routes/auth';
-import { errorHandler } from '../server/middleware/errorHandler';
+import roomRoutes from '../server/routes/rooms.js';
+import bookingRoutes from '../server/routes/bookings.js';
+import contactRoutes from '../server/routes/contact.js';
+import authRoutes from '../server/routes/auth.js';
+import { errorHandler } from '../server/middleware/errorHandler.js';
 
 dotenv.config();
 

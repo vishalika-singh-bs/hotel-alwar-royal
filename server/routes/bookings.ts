@@ -1,7 +1,7 @@
 import { Router } from 'express';
-import { createBooking, getAllBookings, updateBookingStatus } from '../controllers/bookingController';
-import { validate } from '../middleware/validate';
-import { requireAuth } from '../middleware/auth';
+import { createBooking, getAllBookings, updateBookingStatus } from '../controllers/bookingController.js';
+import { validate } from '../middleware/validate.js';
+import { requireAuth } from '../middleware/auth.js';
 import { z } from 'zod/v4';
 
 const bookingSchema = z.object({

@@ -1,7 +1,7 @@
 import { Router } from 'express';
-import { sendContactMessage, getAllMessages } from '../controllers/contactController';
-import { validate } from '../middleware/validate';
-import { requireAuth } from '../middleware/auth';
+import { sendContactMessage, getAllMessages } from '../controllers/contactController.js';
+import { validate } from '../middleware/validate.js';
+import { requireAuth } from '../middleware/auth.js';
 import { z } from 'zod/v4';
 
 const contactSchema = z.object({
